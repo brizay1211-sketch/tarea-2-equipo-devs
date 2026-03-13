@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<body>
+  <script type="module">
+    import cEmpresa from "./dist/controllers/Cl_cEmpresa.js";
+    new cEmpresa();
+  </script>
+  <div id="body">
+    <section id="articulo" hidden>
+      <div>
+        <h5 id="articulo_lblArticulo">Procesar Artículo</h5>
+      </div>
+      <div>
+        <label>Nombre:
+          <input type="text" id="articulo_inCodigo" placeholder="Cuaderno">
+        </label>
+      </div>
+      <div>
+        <label>Costo:
+          <input type="number" id="articulo_inCosto" placeholder="Ej: 100">
+        </label>
+      </div>
+      <div>
+        <label>Venta:
+          <input type="number" id="articulo_inVenta" placeholder="Ej: 100">
+        </label>
+      </div>
+      <div>
+        <button id="articulo_btCancelar">Cancelar</button>
+        <button id="articulo_btAceptar">Aceptar</button>
+      </div>
+    </section>
+    <hr>
+    <div style="margin-bottom: 20px;">
+      <button id="body_btProcesar1Articulo">Procesar 1 Artículo</button>
+    </div>
+
+    <div>
+      El artículo <span id="body_lblCodigoArticulo">0</span> tiene un precio de venta de Bs. <span id="body_lblPrecioDeVenta">0</span>
+    </div>
+    <div>
+      La ganancia será de Bs. <span id="body_lblGanancia">0</span>
+    </div>
+    <div>
+      El artículo con mayor ganancia es: <span id="body_lblArticuloMayGanancia">0</span>
+    </div>
+    <!-- Nuevo campo: cantidad de artículos procesados -->
+    <div>
+      Cantidad de artículos procesados: <span id="body_lblCantidadArticulos">0</span>
+    </div>
+  </div>
+</body>
+</html>
